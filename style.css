@@ -1,0 +1,159 @@
+/* @import url(    ); */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+
+}
+
+:root {
+    --text-color: white;
+    --bg-color: black;
+    --main-color: blue;
+
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+    background-image: url("bg-sejarah.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(225, 225, 225, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 33px;
+    color: var(--text-color);
+    font-weight: 700;
+    text-decoration: none;
+    cursor: default;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 15px 25px;
+    transition: all .5s ease;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    padding-right: 10px;
+}
+
+.follow-me {
+    display: flex;
+    align-items: center;
+}
+
+.follow-me a:first-child{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    margin-right: 20px;
+}
+
+.follow-me a {
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all .50s ease;
+}
+
+.follow-me a :hover {
+    color: var(--main-color);
+    padding-right: 10px;
+}
+
+section {
+    padding: 70px 20% 60px;
+}
+
+.home {
+    position: right;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 80px;
+}
+
+.home-text h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 60px;
+    color: var(--main-color);
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: ghostwhite;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 13px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 350;
+    transition: all .50 ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform:  translateX(10px);
+    border: 5px solid var(--text-color);
+    color: var(--text-color);
+}
