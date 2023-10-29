@@ -59,22 +59,21 @@ span {
 
 .navbar {
     display: flex;
+    gap: 30px;
 }
 
 .navbar a {
     color: var(--text-color);
     font-size: var(--p-font);
     font-weight: 500;
-    margin: 15px 25px;
     transition: all .5s ease;
 }
 
 .navbar a:hover {
     color: var(--main-color);
-    padding-right: 10px;
 }
 
-.follow-me {
+/* .follow-me {
     display: flex;
     align-items: center;
 }
@@ -97,7 +96,7 @@ span {
 .follow-me a :hover {
     color: var(--main-color);
     padding-right: 10px;
-}
+} */
 
 section {
     padding: 70px 20% 60px;
@@ -142,18 +141,18 @@ section {
 
 .btn {
     display: inline-block;
-    padding: 10px;
-    border-bottom: 13px;
+    padding: 15px 20px;
     background-color: var(--main-color);
     color: var(--text-color);
     font-size: 15px;
     font-weight: 350;
-    transition: all .50 ease;
+    transition: all .3s ease;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .btn:hover {
-    transform:  translateX(10px);
-    border: 5px solid var(--text-color);
     color: var(--text-color);
+    background: rgba(225, 225, 225, .1);
+    backdrop-filter: blur(10px);
 }
