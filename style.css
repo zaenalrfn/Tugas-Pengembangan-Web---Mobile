@@ -17,19 +17,11 @@
     --text-color: white;
     --bg-color: black;
     --main-color: blue;
+    --color-gold: #FFD700;
 
     --h1-font: 6rem;
     --h2-font: 3rem;
     --p-font: 1rem;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    color: var(--text-color);
-    background-image: url("bg-sejarah.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 header {
@@ -43,6 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(10px);
+    z-index: 9999;
 }
 
 .logo {
@@ -54,12 +47,13 @@ header {
 }
 
 span {
-    color: var(--main-color);
+    color: var(--color-gold);
 }
 
 .navbar {
     display: flex;
     gap: 30px;
+    
 }
 
 .navbar a {
@@ -70,7 +64,7 @@ span {
 }
 
 .navbar a:hover {
-    color: var(--main-color);
+    color: var(--color-gold);
 }
 
 /* .follow-me {
@@ -99,20 +93,24 @@ span {
 } */
 
 section {
-    padding: 70px 20% 60px;
+    /* padding: 70px 20% 60px; */
+    padding: 50px 100px;
 }
 
 .home {
-    position: right;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to left);
+    color: var(--text-color);
+    background-image: url("img/b-malioboro.jpg");
+    filter: brightness(80%);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    object-fit: cover;
+    object-position: center;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-top: 80px;
+    justify-content: center;
+    padding-top: 10rem;
 }
 
 .home-text h5 {
@@ -121,7 +119,7 @@ section {
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 60px;
-    color: var(--main-color);
+    color: #FFD700;
 }
 
 .home-text h1 {
@@ -135,14 +133,15 @@ section {
     font-size: var(--p-font);
     font-weight: 500;
     line-height: 30px;
-    color: ghostwhite;
+    color: var(--text-color);
     margin-bottom: 35px;
-}
+    width: 60%;
+} 
 
 .btn {
     display: inline-block;
     padding: 15px 20px;
-    background-color: var(--main-color);
+    background-color: var(--color-gold);
     color: var(--text-color);
     font-size: 15px;
     font-weight: 350;
