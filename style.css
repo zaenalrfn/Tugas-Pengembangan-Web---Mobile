@@ -30,11 +30,11 @@ header {
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: rgba(225, 225, 225, .1);
+    /* background: rgba(225, 225, 225, .1); */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     z-index: 9999;
 }
 
