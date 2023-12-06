@@ -1,4 +1,4 @@
-/* @import url(    ); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -9,7 +9,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -46,9 +46,9 @@ header {
     cursor: default;
 }
 
-span {
+/* span {
     color: var(--color-gold);
-}
+} */
 
 .navbar {
     display: flex;
@@ -101,7 +101,7 @@ section {
     height: 100vh;
     width: 100%;
     color: var(--text-color);
-    background-image: url("img/b-malioboro.jpg");
+    background-image: url("img/back-header.jpg");
     filter: brightness(80%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,8 +118,7 @@ section {
     font-weight: 600;
     margin-bottom: 10px;
     text-transform: uppercase;
-    letter-spacing: 60px;
-    color: #FFD700;
+    letter-spacing: 20px;
 }
 
 .home-text h1 {
@@ -141,8 +140,8 @@ section {
 .btn {
     display: inline-block;
     padding: 15px 20px;
-    background-color: var(--color-gold);
-    color: var(--text-color);
+    background-color: white;
+    color: #000000;
     font-size: 15px;
     font-weight: 350;
     transition: all .3s ease;
