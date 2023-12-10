@@ -5,7 +5,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Landing Page</title>
+      <title>MALIOBORO</title>
 
       <link rel="stylesheet" href="style.css" />
       <link
@@ -96,30 +96,34 @@
               </p>
             </div>
             <div class="btn-putar">
-              <button>Putar video</button>
+              <button id="putar-video">Putar video</button>
             </div>
           </div>
           <div class="video-ytb">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/3IjDlXZmesQ?si=_Jbzgo1hvW7NvPGK"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-            <!-- <video id="VisaChipCardVideo" width="600" controls>
-              <source
-                src="https://www.w3schools.com/html/mov_bbb.mp4"
-                type="video/mp4" />
-              Browser does not support <video> tag
-            </video> -->
+            <div class="v-box">
+              <div class="video">
+                <div class="video-frame">
+                  <iframe
+                    width="560"
+                    height="315"
+                    title="YouTube video player"
+                    frameborder="0"
+                    id="vid"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+                <button class="tutup-video">Tutup video</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- BAGIAN GALERI MALIOBORO -->
-      <section id="galeri-malioboro"></section>
+      <section id="galeri-malioboro">
+        <div class="galeri-box">
+          <div class="galeri"></div>
+        </div>
+      </section>
 
       <!-- BAGIAN FOOTER MALIOBORO -->
       <footer></footer>
