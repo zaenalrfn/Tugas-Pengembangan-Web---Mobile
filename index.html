@@ -3,7 +3,6 @@
   <html>
     <head>
       <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>MALIOBORO</title>
 
@@ -16,6 +15,9 @@
     <body>
       <header class="header">
         <a href="#" class="logo">Malioboro</a>
+        <div class="header-bar">
+          <img id="bar" src="img/bar.png" alt="" width="50" height="50" />
+        </div>
         <ul class="navbar">
           <li><a href="#">Informasi</a></li>
           <li><a href="#">Tentang Malioboro</a></li>
@@ -58,6 +60,7 @@
                 velit commodi libero debitis, consectetur repellat, fugit ipsa
                 vero fuga numquam optio!
               </p>
+              <a href="artikel_malioboro.html">Lihat artikel</a>
             </div>
           </div>
           <div class="artikel-2">
@@ -69,6 +72,7 @@
                 velit commodi libero debitis, consectetur repellat, fugit ipsa
                 vero fuga numquam optio!
               </p>
+              <a href="artikel_terasMalioboro.html">lihat artikel</a>
             </div>
             <div class="artikel-img">
               <img src="img/img-artikel-1.jpeg" alt="artikel-1" />
@@ -99,20 +103,20 @@
               <button id="putar-video">Putar video</button>
             </div>
           </div>
-          <div class="video-ytb">
-            <div class="v-box">
-              <div class="video">
-                <div class="video-frame">
-                  <iframe
-                    width="560"
-                    height="315"
-                    title="YouTube video player"
-                    frameborder="0"
-                    id="vid"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                </div>
-                <button class="tutup-video">Tutup video</button>
+        </div>
+        <div class="video-ytb">
+          <div class="v-box">
+            <div class="video">
+              <div class="video-frame">
+                <iframe
+                  width="560"
+                  height="315"
+                  title="YouTube video player"
+                  frameborder="0"
+                  id="vid"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
               </div>
+              <button class="tutup-video">Tutup video</button>
             </div>
           </div>
         </div>
@@ -121,7 +125,53 @@
       <!-- BAGIAN GALERI MALIOBORO -->
       <section id="galeri-malioboro">
         <div class="galeri-box">
-          <div class="galeri"></div>
+          <div class="galeri">
+            <div class="galeri-card">
+              <div class="galeri-img">
+                <img src="img/galeri/galeri-1.jpeg" alt="" />
+              </div>
+              <div class="galeri-btn">
+                <h3>judul</h3>
+                <button>lihat</button>
+              </div>
+            </div>
+            <div class="galeri-card">
+              <div class="galeri-img">
+                <img src="img/galeri/galeri-2.jpeg" alt="" />
+              </div>
+              <div class="galeri-btn">
+                <h3>judul</h3>
+                <button>lihat</button>
+              </div>
+            </div>
+            <div class="galeri-card">
+              <div class="galeri-img">
+                <img src="img/galeri/galeri-3.jpeg" alt="" />
+              </div>
+              <div class="galeri-btn">
+                <h3>judul</h3>
+                <button>lihat</button>
+              </div>
+            </div>
+            <div class="galeri-card">
+              <div class="galeri-img">
+                <img src="img/galeri/galeri-4.jpeg" alt="" />
+              </div>
+              <div class="galeri-btn">
+                <h3>judul</h3>
+                <button>lihat</button>
+              </div>
+            </div>
+            <div class="galeri-card">
+              <div class="galeri-img">
+                <img src="img/galeri/galeri-5.jpeg" alt="" />
+              </div>
+              <div class="galeri-btn">
+                <h3>judul</h3>
+                <button>lihat</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -130,6 +180,7 @@
       <script
         src="https://kit.fontawesome.com/d2b4e108c7.js"
         crossorigin="anonymous"></script>
+      <script src="data.js"></script>
       <script src="script.js"></script>
     </body>
   </html>
