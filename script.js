@@ -55,33 +55,40 @@ window.addEventListener("click", (eventVideo) => {
 });
 
 // BAGIAN GALERI
-fetch("./galeri.json")
-  .then((res) => {
-    return res.json();
-  })
-  .then((data) => {
-    dataGaleri(data);
-  });
+// fetch("galeri.json")
+//   .then((res) => {
+//     return res.json();
+//   })
+//   .then((data) => {
+//     dataGaleri(data);
+//   });
 
-const dataGaleri = (galeri) => {
-  const galeriMalioboro = document.querySelector(".galeri");
-  galeriMalioboro.innerHTML = "";
-  galeri.forEach((data) => {
-    const galeriCard = document.createElement("div"),
-      galeriImg = document.createElement("div"),
-      gambar = document.createElement("img"),
-      galeriBtn = document.createElement("div"),
-      galeriJudul = document.createElement("h3"),
-      galeriButton = document.createElement("button");
-    galeriCard.setAttribute("class", "galeri-card");
-    galeriImg.setAttribute("class", "galeri-img");
-    gambar.setAttribute("src", `img/galeri/${data.img}`);
-    galeriBtn.setAttribute("class", "galeri-btn");
-    galeriJudul.innerText = data.judul;
-    galeriButton.innerText = data.btn;
-    galeriImg.append(gambar);
-    galeriBtn.append(galeriJudul, galeriButton);
-    galeriCard.append(galeriImg, galeriBtn);
-    galeriMalioboro.append(galeriCard);
-  });
-};
+// const dataGaleri = (galeri) => {
+//   const galeriMalioboro = document.querySelector(".galeri");
+//   galeriMalioboro.innerHTML = "";
+//   galeri.forEach((data) => {
+//     const galeriCard = document.createElement("div"),
+//       galeriImg = document.createElement("div"),
+//       gambar = document.createElement("img"),
+//       galeriBtn = document.createElement("div"),
+//       galeriJudul = document.createElement("h3"),
+//       galeriButton = document.createElement("button");
+//     galeriCard.setAttribute("class", "galeri-card");
+//     galeriImg.setAttribute("class", "galeri-img");
+//     gambar.setAttribute("src", `img/galeri/${data.img}`);
+//     galeriBtn.setAttribute("class", "galeri-btn");
+//     galeriJudul.innerText = data.judul;
+//     galeriButton.innerText = data.btn;
+//     galeriImg.append(gambar);
+//     galeriBtn.append(galeriJudul, galeriButton);
+//     galeriCard.append(galeriImg, galeriBtn);
+//     galeriMalioboro.append(galeriCard);
+//   });
+// };
+
+// BAGIAN NAVBAR AKTIF
+let bar = document.getElementById("bar"),
+  barUlLi = document.querySelector(".navbar");
+bar.addEventListener("click", function () {
+  barUlLi.classList.toggle("bar-aktif");
+});
