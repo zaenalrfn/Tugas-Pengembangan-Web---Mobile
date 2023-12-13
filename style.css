@@ -35,6 +35,9 @@ header {
     align-items: center;
     z-index: 9999;
 }
+#artikel-mailoboro, #video-malioboro, #galeri-malioboro {
+    padding-top: 6rem;
+}
 .header-active {
     /* background: rgba(225, 225, 225, .1);
     backdrop-filter: blur(10px); */
@@ -137,7 +140,7 @@ header {
 .artikel-box {
     width: 100%;
     height: auto;
-    padding: 50px 100px;
+    padding: 0 100px;
 }
 .artikel-box .artikel-1 ,.artikel-2 {
     display: flex;
@@ -158,6 +161,258 @@ header {
 }
 .artikel-img img {
     width: 100%;
+}
+/* BAGIAN ARTIKEL PERTAMA MALIOBORO */
+.bdy-art1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e6e6e6;
+    padding: 0;
+    margin: 0;
+
+}
+.container-art1 {
+    width: 65%;
+    height: auto;
+    background: white;
+    margin: auto;
+    margin-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.container-art1 header {
+    padding: 0;
+}
+
+.logo-art1 {
+    font-size: 14px;
+    padding: 5px 0 5px 5px;
+    background-color: #080808;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #f2f2f2;
+}
+
+.nav-art1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #01040a;
+    border: 1px solid gainsboro;
+}
+
+.nav-art1 li {
+    float: right;
+}
+
+.nav-art1 li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+
+.nav-art1 li a:hover {
+    opacity: 0.9;
+    background-color: #3385ff;
+}
+
+.art-1 {
+    width: 98.8%;
+    height: auto;
+    border-radius: 3px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid gainsboro;
+    clear: both;
+}
+
+.art-1 p {
+    padding: 5px 6px 5px 5px;
+    line-height: 1.5;
+}
+
+.art-1 .isi {
+    width: 98.5%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    float: left;
+}
+
+.isi-1 .judul-1 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.isi-1 p {
+    margin-top: 0;
+}
+
+.isi-1 img {
+    float: left;
+    width: 95.8%;
+    height: 200px;
+    margin: 5px 5px 5px 5px;
+    padding-left: 10px;
+}
+
+
+.ftr-1 {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.ftr-1 p {
+    color: #888;
+}
+
+.ftr-1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ftr-1 ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ftr-1 ul li a {
+    color: #555;
+    text-decoration: none;
+}
+
+/* BAGIAN ARTIKEL TERAS MALIBORO */
+.bdy-art2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e6e6e6;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container-art2 {
+    width: 65%;
+    height: auto;
+    background: white;
+    margin: auto;
+    margin-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.container-art2 header {
+    padding: 0;
+}
+
+.logo-art2 {
+    font-size: 14px;
+    padding: 5px 0 5px 5px;
+    background-color: #080808;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #f2f2f2;
+}
+
+.nav-art2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #01040a;
+    border: 1px solid gainsboro;
+}
+
+.nav-art2 li {
+    float: right;
+}
+
+.nav-art2 li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+
+.nav-art2 li a:hover {
+    opacity: 0.9;
+    background-color: #3385ff;
+}
+
+.art-2 {
+    width: 98.8%;
+    height: auto;
+    border-radius: 3px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid gainsboro;
+    clear: both;
+}
+
+.art-2 p {
+    padding: 5px 6px 5px 5px;
+    line-height: 1.5;
+}
+
+.art-2 .isi {
+    width: 98.5%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    float: left;
+}
+
+.isi-2 .judul-2 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.isi-2 p {
+    margin-top: 0;
+}
+
+.isi-2 img {
+    float: left;
+    width: 95.8%;
+    height: 200px;
+    margin: 5px 5px 5px 5px;
+    padding-left: 10px;
+}
+
+
+.ftr-2 {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.ftr-2 p {
+    color: #888;
+}
+
+.ftr-2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ftr-2 ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ftr-2 ul li a {
+    color: #555;
+    text-decoration: none;
 }
 
 /* BAGIAN VIDEO MALIOBORO */
@@ -372,18 +627,25 @@ header {
 .galeri-img img {
     border-radius: 10px;
 }
+/* BAGIAN SCROLL KEATAS */
+.keatas {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--bg-color-2);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
 
-
-
-
-
-
-
-
-
-
-
-
+}
+.keatas h3 {
+    transform: rotate(-90deg);
+    color: var(--text-color);
+}
 /* BAGIAN RESPONSIVE MALIOBORO */
 @media screen and (max-width: 1024px) {
     /* BAGIAN JUMBOTRON MALIOBORO */
