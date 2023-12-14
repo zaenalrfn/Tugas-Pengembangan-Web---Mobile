@@ -1,8 +1,10 @@
 RENDER_SCROLL = "header-active";
+SCROLL_KEATAS = "top";
 headerActive();
 function headerActive() {
   window.addEventListener("scroll", () => {
     document.dispatchEvent(new Event(RENDER_SCROLL));
+    document.dispatchEvent(new Event(SCROLL_KEATAS));
   });
 }
 // BAGIAN SCROOL KEATAS
@@ -15,6 +17,9 @@ document.addEventListener(RENDER_SCROLL, () => {
   const posisi = window.scrollY > 100;
   const headerHome = document.querySelector(".header");
   headerHome.classList.toggle("header-active", posisi);
+});
+document.addEventListener(SCROLL_KEATAS, () => {
+  const posisi = window.scrollY > 100;
   posisi ? (btnAtas.style.display = "flex") : (btnAtas.style.display = "none");
 });
 
@@ -49,4 +54,13 @@ let bar = document.getElementById("bar"),
   barUlLi = document.querySelector(".navbar");
 bar.addEventListener("click", function () {
   barUlLi.classList.toggle("bar-aktif");
+});
+
+let navbar = document.querySelector(".navbar"),
+  navbarA = document.querySelectorAll("ul a");
+navbarA.forEach((a) => {
+  a.addEventListener("click", function () {
+    navbar.querySelector(".navbar-aktif").classList.remove("navbar-aktif");
+    a.classList.toggle("navbar-aktif");
+  });
 });
