@@ -61,6 +61,9 @@ header {
     gap: 30px;
     
 }
+.navbar .navbar-aktif {
+    color: var(--color-gold);
+}
 .navbar a {
     color: var(--text-color);
     font-size: var(--p-font);
@@ -161,6 +164,7 @@ header {
 }
 .artikel-img img {
     width: 100%;
+    border-radius: 10px;
 }
 /* BAGIAN ARTIKEL PERTAMA MALIOBORO */
 .bdy-art1 {
@@ -254,11 +258,13 @@ header {
 }
 
 .isi-1 img {
-    float: left;
     width: 95.8%;
-    height: 200px;
-    margin: 5px 5px 5px 5px;
-    padding-left: 10px;
+    height: 300px;
+    display: block;
+    margin: 5px auto 20px auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
 }
 
 
@@ -381,11 +387,13 @@ header {
 }
 
 .isi-2 img {
-    float: left;
     width: 95.8%;
-    height: 200px;
-    margin: 5px 5px 5px 5px;
-    padding-left: 10px;
+    height: 300px;
+    display: block;
+    margin: 5px auto 20px auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
 }
 
 
@@ -466,49 +474,6 @@ header {
 }
 .artikel-des p {
     margin-bottom: 20px;
-}
-.btn-artikel {
-    margin-top: 20px;
-}
-.btn-artikel a {
-    padding: 10px;
-    margin: 50px;
-    cursor: pointer;
-    background-color: #007AFF;
-    color: white;
-    border-radius: 20px;
-}
-.artikel img {
-    width: 100%;
-    height: 100%;
-}
-.artikel {
-    margin: 20px;
-    padding: 20px;
-}
-.kesar a{
-    padding: 20px;
-    background-color: #007AFF;
-}
-.artikel-c img{
-    width: 100%;
-    height: 100%;
-}
-.artikel-c {
-    padding: 40px;
-}
-.artikel-c p{
-    color: red;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-.kesar{
-    margin: 20px;
-}
-.artikel p {
-    padding:30px;
-    margin-left: 10px;
-    color: red;
 }
 .video-btn .btn-putar button {
     margin-top: 20px;
@@ -635,7 +600,7 @@ header {
     width: 35px;
     height: 35px;
     background-color: var(--bg-color-2);
-    /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -697,8 +662,21 @@ header {
     .video-img {
         margin: 20px 0;
     }
+    .container-art2,.container-art1 {
+        width: auto;
+    }
+    .art-2,.art-1 {
+        padding: 20px;
+    }
 }
 @media screen and (max-width: 768px) {
+    .home-text h1 {
+        font-size: 45px;
+        margin-top: 20px;
+    }
+    .home-text p {
+        width: auto;
+    }
     .artikel-box .artikel-2 {
         flex-direction: column-reverse;
         text-align: left;
