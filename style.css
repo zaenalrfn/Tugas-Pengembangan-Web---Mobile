@@ -732,6 +732,12 @@ header {
     .art-2,.art-1 {
         padding: 20px;
     }
+    .popup-galeri,
+    .popup-img {
+        width: 80vw;
+        height: 20vh;
+        margin: 20px 0;
+    }
 }
 @media screen and (max-width: 768px) {
     .home-text h1 {
@@ -772,6 +778,18 @@ header {
             height: auto;
             opacity: 1;
         }
+    }
+    .popup-galeri,
+    .popup-img {
+        width: 100vw;
+        height: 450px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .tutup-popup {
+        width: 50%;
+        margin: 0 30px;
     }
 
 }
