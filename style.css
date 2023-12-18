@@ -582,15 +582,78 @@ header {
 }
 .galeri .galeri-btn {
     position: absolute;
-    top: 0;
-    bottom: 100px;
+    bottom: -500px;
     width: 100%;
     height: 100%;
     color: var(--bg-color-2);
     text-align: center;
+    background: rgba(225, 225, 225, .1);
+    backdrop-filter: blur(10px);
+    transition: all 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.galeri-card:hover .galeri-btn {
+    bottom: 0px;
+}
+.galeri-btn button {
+    padding: 15px 45px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .galeri-img img {
     border-radius: 10px;
+}
+.popup-box {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: rgba(225, 225, 225, .1);
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.popup-galeri, .popup-img {
+    width: 750px;
+    height: 400px;
+}
+.popup-img img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.tutup-popup {
+    width: auto;
+    margin-top: 20px;
+    padding: 15px 45px;
+    background-color: var(--bg-color-2);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 300ms ease;
+}
+.tutup-popup:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.popup-anima {
+    animation:  popup 300ms forwards;
+}
+@keyframes popup {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 /* BAGIAN SCROLL KEATAS */
 .keatas {
@@ -611,6 +674,7 @@ header {
     transform: rotate(-90deg);
     color: var(--text-color);
 }
+/* BAGIAN FOOTER */
 /* BAGIAN RESPONSIVE MALIOBORO */
 @media screen and (max-width: 1024px) {
     /* BAGIAN JUMBOTRON MALIOBORO */
