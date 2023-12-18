@@ -64,3 +64,16 @@ navbarA.forEach((a) => {
     a.classList.toggle("navbar-aktif");
   });
 });
+
+// BAGIAN POPUP GALERI IMG
+let popupBox = document.querySelector(".popup-box"),
+  popUpImg = document.querySelector(".popup-img img");
+const tutupPopup = () => {
+  popupBox.style.display = "none";
+};
+
+const bukaPopup = (gambar) => {
+  popUpImg.setAttribute("src", gambar);
+  popupBox.classList.add("popup-anima");
+  popupBox.style.display = "flex";
+};
