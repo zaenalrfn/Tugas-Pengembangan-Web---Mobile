@@ -151,8 +151,11 @@ header {
     gap: 40px;
     margin-bottom: 50px;
 }
+.artikel-box .artikel-1 {
+    text-align: justify;
+}
 .artikel-box .artikel-2 {
-    text-align: right;
+    text-align: justify;
 }
 .artikel-1 .artikel-img,
 .artikel-1 .artikel-des, .artikel-2 .artikel-des,
@@ -255,6 +258,7 @@ header {
 
 .isi-1 p {
     margin-top: 0;
+    text-align: justify;
 }
 
 .isi-1 img {
@@ -384,6 +388,7 @@ header {
 
 .isi-2 p {
     margin-top: 0;
+    text-align: justify;
 }
 
 .isi-2 img {
@@ -492,6 +497,7 @@ header {
 .video-btn   .btn-des p    {
     font-weight: 300;
     line-height: 2em;
+    text-align: justify;
 }
 .video-des p {
     font-weight: 300;
@@ -734,7 +740,7 @@ header {
     }
     .popup-galeri,
     .popup-img {
-        width: 80vw;
+        width: 90vw;
         height: 20vh;
         margin: 20px 0;
     }
