@@ -681,33 +681,61 @@ header {
     color: var(--text-color);
 }
 /* BAGIAN FOOTER */
-.footer{
-    width: 100%;
-    height: auto;
-    background-color: #3385ff;
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 40px 100px;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.footer-1 p{
-     text-align:justify ;
-}
-.footer-1{
-   width: 300px;
-   
 
+.footer-logo {
+    flex: 1;
+    margin-bottom: 20px;
 }
-.footer-2{
-    width: 300px;
+
+.footer-links,
+.footer-social {
+    flex: 1;
 }
-.Footer-map{
-    width: 300px;
-    height: 200px;
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
 }
-.Footer-map .Map{
-    width: 100%;
-    height: 100%;
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #ffd700;
+}
+
+.footer-info {
+    margin-top: 20px;
+}
+
+/* Style untuk informasi hak cipta  tapi ini baru opsional gimana zaen? */
+.footer-info p {
+    margin: 5px 0;
 }
 
 /* BAGIAN RESPONSIVE MALIOBORO */
