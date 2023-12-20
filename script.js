@@ -34,7 +34,8 @@ putarVideo.addEventListener("click", function () {
   document.body.style.overflow = "hidden";
   frameVideo.setAttribute(
     "src",
-    "https://www.youtube.com/embed/3IjDlXZmesQ?si=_Jbzgo1hvW7NvPGK&autoplay=1"
+    "https://www.youtube.com/embed/UniviIRrYGE?si=WiOmDnXIU11FJGRf&autoplay=1"
+    // "https://www.youtube.com/embed/3IjDlXZmesQ?si=_Jbzgo1hvW7NvPGK&autoplay=1"
   );
 });
 tutupVideo.addEventListener("click", function () {
