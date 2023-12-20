@@ -46,7 +46,9 @@ tutupVideo.addEventListener("click", function () {
 });
 window.addEventListener("click", (eventVideo) => {
   eventVideo.target === videoYoutube
-    ? (videoYoutube.style.display = "")
+    ? ((videoYoutube.style.display = ""),
+      (document.body.style.overflow = ""),
+      frameVideo.removeAttribute("src"))
     : false;
 });
 
