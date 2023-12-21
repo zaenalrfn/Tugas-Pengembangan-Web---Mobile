@@ -35,7 +35,6 @@ putarVideo.addEventListener("click", function () {
   frameVideo.setAttribute(
     "src",
     "https://www.youtube.com/embed/UniviIRrYGE?si=WiOmDnXIU11FJGRf&autoplay=1"
-    // "https://www.youtube.com/embed/3IjDlXZmesQ?si=_Jbzgo1hvW7NvPGK&autoplay=1"
   );
 });
 tutupVideo.addEventListener("click", function () {
@@ -80,3 +79,8 @@ const bukaPopup = (gambar) => {
   popupBox.classList.add("popup-anima");
   popupBox.style.display = "flex";
 };
+
+// BAGIAN FOOTER TAHUN
+const footerTahun = document.getElementById("footer-tahun");
+const tahun = new Date();
+footerTahun.innerText = tahun.getFullYear();
