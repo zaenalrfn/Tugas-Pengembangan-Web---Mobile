@@ -39,9 +39,9 @@ header {
     padding-top: 6rem;
 }
 .header-active {
-    /* background: rgba(225, 225, 225, .1);
-    backdrop-filter: blur(10px); */
-    background-color: #000000;
+    /* background: rgba(0, 0, 0, .5); */
+    /* backdrop-filter: blur(10px); */
+    background-color: #091126;
     box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.25);
     transition: all 300ms ease-out;
     
@@ -143,18 +143,25 @@ header {
 .artikel-box {
     width: 100%;
     height: auto;
-    padding: 0 100px;
+    padding: 0 90px;
 }
 .artikel-box .artikel-1 ,.artikel-2 {
     display: flex;
     justify-content: center;
     gap: 40px;
     margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 300ms ease;
 }
-.artikel-box .artikel-1 {
+.artikel-box .artikel-1:hover, .artikel-2:hover {
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    
+}
+.artikel-box .artikel-1 p {
     text-align: justify;
 }
-.artikel-box .artikel-2 {
+.artikel-box .artikel-2 p {
     text-align: justify;
 }
 .artikel-1 .artikel-img,
@@ -168,6 +175,20 @@ header {
 .artikel-img img {
     width: 100%;
     border-radius: 10px;
+}
+.artikel-des a {
+    background-color: #007AFF;
+    padding: 10px;
+    margin-top: 500px;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: all 300ms ease;
+}
+.artikel-des a:hover {
+    background-color: #000000;
+}
+.artikel-des p {
+    margin-bottom: 20px;
 }
 /* BAGIAN ARTIKEL PERTAMA MALIOBORO */
 .bdy-art1 {
@@ -470,16 +491,6 @@ header {
         opacity: 100;
     }
 }
-.artikel-des a {
-    background-color: #007AFF;
-    padding: 10px;
-    margin-top: 500px;
-    border-radius: 10px;
-    color: aliceblue;
-}
-.artikel-des p {
-    margin-bottom: 20px;
-}
 .video-btn .btn-putar button {
     margin-top: 20px;
     padding: 15px 35px;
@@ -506,7 +517,8 @@ header {
     flex: 3 ;
 }
 .video-des h2 {
-    font-size: 50px;
+    font-size: 30px;
+    margin-top: 10px;
     font-weight: 500;
 }
 .video-img {
@@ -585,6 +597,7 @@ header {
 .galeri .galeri-card {
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
 }
 .galeri .galeri-btn {
     position: absolute;
@@ -601,6 +614,9 @@ header {
     align-items: center;
     border-radius: 10px;
 
+}
+.galeri-card:hover {
+    box-shadow: 4px 10px 15px -3px rgba(0, 0, 0, 0.2);
 }
 .galeri-card:hover .galeri-btn {
     bottom: 0px;
@@ -682,25 +698,27 @@ header {
 }
 /* BAGIAN FOOTER */
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 30px 0;
-    font-family: Arial, sans-serif;
+    background-color: #091126;
+    color: var(--text-color);
     text-align: center;
 }
-
+.footer p {
+    padding: 20px 0;
+}
 .footer-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    padding: 30px 100px;
 }
 
 .footer-logo {
     flex: 1;
-    margin-bottom: 20px;
+    text-align: left;
 }
-
+.footer-logo p {
+    font-weight: 300;
+}
 .footer-links,
 .footer-social {
     flex: 1;
@@ -732,10 +750,10 @@ header {
 .footer-info {
     margin-top: 20px;
 }
-
-/* Style untuk informasi hak cipta  tapi ini baru opsional gimana zaen? */
-.footer-info p {
-    margin: 5px 0;
+.map {
+    width: 100%;
+    display: block;
+    height: 300px;
 }
 
 /* BAGIAN RESPONSIVE MALIOBORO */
