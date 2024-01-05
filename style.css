@@ -60,7 +60,6 @@ header {
     display: flex;
     justify-content: space-between ;
     gap: 30px;
-    padding: 1.4rem 5%;
 }
 .navbar .navbar-aktif {
     color: var(--color-gold);
@@ -206,8 +205,7 @@ header {
     background: white;
     margin: auto;
     margin-top: 5px;
-    padding-bottom: 5px;
-    padding-top: 8%;
+    padding-top: 7rem;
     box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -356,8 +354,7 @@ header {
     background: white;
     margin: auto;
     margin-top: 5px;
-    padding-bottom: 5px;
-    padding-top: 8%;
+    padding-top: 7rem;
     box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -820,7 +817,7 @@ header {
     }
 }
 @media screen and (max-width: 960px) {
-    header {
+    header, .header-art1, .header-art2 {
         padding: 20px 60px;
     }
     .home-text {
@@ -916,6 +913,9 @@ header {
         width: 50%;
         margin: 0 30px;
     }
+    .logo-art1, .logo-art2 {
+            font-size: 25px;
+    }
 
 }
 @media screen and (max-width: 658px) {
@@ -923,7 +923,7 @@ header {
         width: 100%;
         grid-template-columns: auto;
     }
-    header {
+    header, .header-art1, .header-art2 {
         padding: 20px 30px;
     }
     
